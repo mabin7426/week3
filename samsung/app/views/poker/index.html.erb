@@ -1,0 +1,20 @@
+<div class="center hero-unit">
+	<h1>Hey <%= @name%>!!! </h1>
+	<h2>Welcome to poker!</h2>
+		<p>I will be your tour guide today.  It's a pretty simple tour.  Below, you have your cards.  This is what you need to do:</p>
+		<ul>
+			<li>Look at the cards below.</li>
+			<li>Remember your cards</li>
+			<li>Once you are finished, click "refresh" in your browser window. </li>
+			
+		</ul>
+		<p>Thank you and I hope you have fun!</p>
+		<ol>
+			<li><%= @yournumber1%> of <%= @yoursuit1%></li>
+			<li><%= @yournumber2%> of <%= @yoursuit2%></li>
+			<li><%= @yournumber3%> of <%= @yoursuit3%></li>
+			<li><%= @yournumber4%> of <%= @yoursuit4%></li>
+			<li><%= @yournumber5%> of <%= @yoursuit5%></li>	
+		</ol>
+
+		<%= link_to "Click here to get a new hand!", '/poker', class: "btn btn-large btn-primary" %>
